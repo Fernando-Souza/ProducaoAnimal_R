@@ -1,0 +1,575 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+No acampamento de hoje Tim Tam e eu
+falaremos sobre o nosso ambiente.
+
+2
+00:00:05,100 --> 00:00:11,100
+Não exatamente esse Tim Tam.
+Nós falaremos sobre manter uma clara compreensão
+
+3
+00:00:11,200 --> 00:00:15,900
+de nosso ambiente, para que possamos
+divertir e viver uma vida produtiva e feliz.
+
+4
+00:00:16,000 --> 00:00:23,500
+Hoje falaremos sobre R "Packages", "Sessions",
+"Workspace" e "Working Directory"
+
+5
+00:00:25,500 --> 00:00:34,100
+Aqui está nosso computador. Temos o HD e a RAM.
+Então vamos a internet e baixamos o R
+
+6
+00:00:34,200 --> 00:00:36,700
+do CRAN para nosso HD
+
+7
+00:00:36,800 --> 00:00:41,900
+Provavelmente  instalaremos alguns pacotes
+que estamos interessados em testar
+
+8
+00:00:42,000 --> 00:00:48,500
+Isto é como programadores ao redor do mundo ampliam e
+contribuem paro o projeto R.
+
+9
+00:00:48,600 --> 00:00:58,100
+"Packages" são basicamente grupos de funções que pessoas escrevem
+para um objetivo específico ou um conjunto de objetivos
+
+10
+00:00:58,200 --> 00:01:02,700
+e agrupam em um diretório em seu HD.
+
+11
+00:01:02,800 --> 00:01:11,300
+Provavelmente possuímos alguns arquivos de dados salvos
+e talvez alguns scripts que escrevemos.
+
+12
+00:01:11,400 --> 00:01:23,900
+Então o que acontece quando iniciamos o R. R  é executado na RAM e
+a ocupar espaço na memória primária do computador?
+
+13
+00:01:24,000 --> 00:01:34,500
+É aí que a "Session" inicia. Uma "Session" é um grupo de utilidade
+da linguagem R. É basicamente tudo que
+
+14
+00:01:34,600 --> 00:01:40,100
+você digita e, de outra forma, tudo entre iniciar e desligar o R.
+
+15
+00:01:40,200 --> 00:01:49,500
+Você provavelmente ativará alguns pacotes.
+Você pode utilizar a função "require()" ou "library()".
+
+16
+00:01:49,900 --> 00:01:56,000
+Importante observar para novos usuários, isto pode ser um pouco confuso mas
+
+17
+00:01:55,800 --> 00:02:04,300
+nem todos os pacotes são ativados toda vez que você inicia o R.
+Ele aguarda você dizer a ele o que você quer ativar.
+
+18
+00:02:04,400 --> 00:02:07,900
+Você mesmo terá de ativa-los a cada nova sessão.
+
+19
+00:02:11,000 --> 00:02:20,500
+Você pode "source" seu arquivo script. Isso significa carregar seu arquivo script
+dentro da memória RAM, então que suas funções
+
+20
+00:02:20,600 --> 00:02:27,500
+tornem disponíveis para uso e você possa ler seus dados
+utilizando "read.csv()".
+
+21
+00:02:27,600 --> 00:02:38,800
+Agora você possui todos esses objetos em seu "Workspace".
+O "workspace" é isso! Uma coleção de tudo o que você criou em sua RAM.
+
+22
+00:02:36,900 --> 00:02:47,400
+Se você quer saber o que há em seu "workspace" você
+pode utilizar o comando list, ls() , para mostrar todos os objetos em seu "Workspace"
+
+23
+00:02:47,500 --> 00:02:59,000
+e você pode utilizar rm() para remover objetos específicos de seu "Workspace"
+ou você pode listar todos e removê-los.
+
+24
+00:02:59,100 --> 00:03:07,600
+Porém se você quer ter certeza que tudo está limpo, é
+melhor você desligar e não salvar nenhum de seus objetos.
+
+25
+00:03:07,700 --> 00:03:14,200
+Essa é a única forma de saber que você conseguiu se livrar
+de tudo e de todos os pacotes que você ativou.
+
+26
+00:03:14,800 --> 00:03:22,800
+Então aqui vai você programando feliz, tec, clic,clic,clic, e criando
+muitos,muitos,muitos, muitos objetos.
+
+27
+00:03:22,900 --> 00:03:31,400
+Agora você possui muitas coisas em seu "workspace".
+Então você pode pensar "Isso é fantástico!", mas o que acontece quando
+
+28
+00:03:31,500 --> 00:03:43,100
+você tem um "Shazam" falta de energia. Bem lá vai você perder tudo (risos).
+Então o que você faz para se proteger contra isso?
+
+29
+00:03:43,200 --> 00:03:52,700
+Bem, se você voltar para o momento quando você havia realizado muito trabalho
+ou mesmo antes disso, você deveria pegar cada pequeno pedaço de código
+
+30
+00:03:52,800 --> 00:04:06,300
+que funciona, criar um arquivo de texto,copiar e colar as linhas de
+código que funcionaram dentro de um script e então você deve salvar
+
+31
+00:04:06,400 --> 00:04:11,500
+esse script em seu HD, em uma pasta no seu diretório ou em algum lugar onde
+você está fazendo seu trabalho.
+
+32
+00:04:11,600 --> 00:04:24,800
+Então você cria seu script e nomeia-o com um nome que termina em ".R".
+Então no final da sessão quando "você terminou por hoje"
+
+33
+00:04:24,900 --> 00:04:33,400
+e você está pronto para relaxar e deixar seu computador para trás
+R lhe pergunta : "Você quer salvar uma imagem do seu 'workspace' ? "
+
+34
+00:04:33,500 --> 00:04:46,000
+Se você responder "yes" o que acontecerá é que, todos os objetos serão
+"sugados" dentro desse arquivo oculto chamado ".RData" .
+
+35
+00:04:46,100 --> 00:04:50,600
+Ele é um arquivo binário que armazena todos aqueles objetos.
+
+36
+00:04:50,900 --> 00:05:02,200
+Quando você sai, tudo que você digitou in "clic,clic,clic" é automaticamente salvo
+dentro de um arquivo ".history".
+
+37
+00:04:58,700 --> 00:05:14,200
+Agora ".RData" e ".history" são arquivos em nosso diretório, porém são ocultos.
+Arquivos que iniciam com "." são ocultos
+
+38
+00:05:14,300 --> 00:05:25,800
+e você terá trabalho extra para vê-los mas eles estarão lá.
+E o que acontece na próxima vez que você inciar o R no mesmo diretório?
+
+39
+00:05:25,900 --> 00:05:34,400
+Você terá reativado automaticamente aqueles arquivos.
+Agora isso pode ou não ser o comportamento que você deseja.
+
+40
+00:05:34,500 --> 00:05:41,000
+Pessoalmente eu não gosto disso porque você provavelmente criou
+muito objetos, alguns estavam provavelmente errados
+
+41
+00:05:41,100 --> 00:05:45,600
+e seis meses depois quando você retorna a eles você pode ter esquecido
+completamente, ok.
+
+42
+00:05:45,700 --> 00:05:55,500
+Então o que eu gosto de fazer é responder "No"
+e ao invés disso utilizar a função save()
+
+43
+00:05:55,600 --> 00:06:06,600
+para salvar meus objetos. Então eu pego somente o objetos que quero
+e salvo em um arquivo que eu nomeei e posso encontra-lo novamente.
+
+44
+00:06:06,700 --> 00:06:16,900
+Então utilizo a função savehistory() para salvar meu histórico em um arquivo
+cujo nome eu conheço.
+
+45
+00:06:17,000 --> 00:06:27,500
+Eu normalmente não salvo muitos objetos, eu somente faço isso quando
+a analise toma muito do tempo do computador
+
+46
+00:06:27,600 --> 00:06:31,100
+e desejo salvar alguns arquivos intermediários de processamento de dados
+
+47
+00:06:31,200 --> 00:06:40,700
+Porém o que você deve fazer muito,muito,muito é esforçar em
+escrever "scripts" limpos.
+
+48
+00:06:40,800 --> 00:06:48,300
+Então se esforce em construir "script" limpos com comentários, então
+que em qualquer tempo que você abrir o script
+
+49
+00:06:48,400 --> 00:06:50,200
+você compreenderá o que você fez e o porque.
+
+50
+00:06:50,300 --> 00:06:57,800
+Então da próxima vez que você iniciar o R, o que você deve
+fazer é somente iniciar seu script.
+
+51
+00:06:57,900 --> 00:07:07,400
+e seu escript será carrregado, seus "Packages" ,
+suas proprias funções e seus dados serão ativados produzindo resultados.
+
+52
+00:07:07,500 --> 00:07:16,000
+Você poderá salvar as saídas em arquivos, salvar seu modelo
+ou qualquer coisa dentro de de um arquivo .csv,
+
+53
+00:07:16,100 --> 00:07:20,600
+salvar seus gráficos em arquivos ".pdf" que serão armazenados
+eu HD.
+
+54
+00:07:20,700 --> 00:07:29,200
+E qual é a vantagem disso? Bem, você poderá recriar suas análises!
+Você poderá refazê-las, você pode fazer isso um milhão de vezes!
+
+55
+00:07:29,300 --> 00:07:37,800
+Muito fácil ! Você pode salva-lo e no futuro modificá-lo para outra objetivo
+ou você poderá ampliá-lo.
+
+56
+00:07:37,900 --> 00:07:49,000
+Existem muitas coisas que você pode fazer. Porém o primeiro passo
+para ter bons resultados reproduzíveis é produzir scripts limpos.
+
+57
+00:07:49,200 --> 00:07:58,000
+Você pode se organizar, ter pastas separadas para cada projeto e
+em cada pasta ter seus scripts e seus dados juntamente com
+
+58
+00:07:57,700 --> 00:08:02,600
+as saídas tudo empacotado de forma que você poderá facilmente
+encontrá-lo.
+
+59
+00:08:10,700 --> 00:08:18,200
+Então se você quer toda essa festa aconteça, você deve saber que a RAM
+escreve arquivos em seu HD
+
+60
+00:08:18,300 --> 00:08:22,800
+coleta coisas em seu disco rígido e coloca dentro da RAM.
+
+61
+00:08:22,900 --> 00:08:28,400
+Porém, o que você deve saber, é onde você está trabalhando em seu HD.
+
+62
+00:08:28,500 --> 00:08:35,000
+Eu estou falando sobre o diretório de trabalho, é claro.
+Então vamos ter uma pequena demonstração.
+
+63
+00:08:35,100 --> 00:08:52,600
+Eu estou iniciando meu R e tentando executar um script que escrevi.
+Ele está em meu diretório "home" em nosso ".../class/Test.R"
+
+64
+00:08:56,900 --> 00:09:11,200
+Ok! Aqui está ele aberto. Ele é uma pequena script de demonstração.
+Ele utiliza um banco de dados do sistema R chamado  "iris"
+
+65
+00:09:11,300 --> 00:09:21,900
+e aqui estão as primeiras 6 linhas de iris e esses são os nomes das colunas.
+
+66
+00:09:22,000 --> 00:09:28,500
+O que esse escript faz é uma gráfico.
+Ele cria um gráfico bivarido.Aqui está.
+
+67
+00:09:28,600 --> 00:09:33,100
+Como eu estou executando comandos aqui eu estou destacando
+
+68
+00:09:33,600 --> 00:09:40,100
+o que eu quero  pressionando a tecla "Enter".
+Ele automaticamente envia o comando para o console.
+
+69
+00:09:40,200 --> 00:09:51,700
+Então gera o gráfico e imprime poucas coisas na tela.
+Isso é suficiente por agora. Falaremos mais posteriormente.
+
+70
+00:09:51,800 --> 00:09:57,300
+É no console que também mostra o resumo do banco de dados utilizando
+a função summary().
+
+71
+00:09:57,500 --> 00:09:59,600
+Então vamos tentar carregar esse script {sourcinng}.
+
+72
+00:09:59,900 --> 00:10:11,500
+Nós vamos aqui. O que maioria dos novos usuários fazem
+é digitar "source()", o qual é uma função para executar um script,
+
+73
+00:10:11,600 --> 00:10:17,500
+e  então digitar o nome do seu script o qual é "teste.R". O que acontece?
+Oh!! Você obteve um error!
+
+74
+00:10:17,600 --> 00:10:27,100
+E a primeira coisa que novos usuários pensam é : "Meu computador quebrou!", "Alguma coisa está errado!"
+ou "Alguma coisa está errado comigo! nada funciona para mim!"
+
+75
+00:10:27,200 --> 00:10:37,700
+Porém acalme-se e observe a mensagem de erro. Você verá que ela diz que
+não pode abrir uma conecção e então mostra uma mensagem de alerta
+
+76
+00:10:37,800 --> 00:10:43,300
+"Não pode abrir o arquivo 'test.R'. Nenhum arquivo ou diretório"
+
+77
+00:10:43,400 --> 00:10:50,100
+Você pode estar pensando, o que o R está falando para você?
+Eu sei que existe um arquivo lá que eu mesmo escrevi!
+
+78
+00:10:50,200 --> 00:11:00,700
+Bem, o que isso está dizendo a você é que ele não pode encontrar o arquivo
+e normalmente isso é um "Eureka".
+
+79
+00:11:00,800 --> 00:11:05,300
+É um momento para lhe dizer que você provavelmente está
+no diretório de trabalho errado.
+
+80
+00:11:05,400 --> 00:11:20,500
+Então se você procurar no console e no canto superior esquerdo,
+você verá que "~" significa que você está no diretório "home" do seu computador
+
+81
+00:11:21,000 --> 00:11:28,500
+o qual não é a pasta "Rclass".
+Então onde nós estamos? Aqui, "Marguerite".
+
+82
+00:11:28,600 --> 00:11:37,100
+Mas nós acreditamos que estamos um nível abaixo da "Rclass"
+porém não estamos lá estamos aqui.
+
+83
+00:11:37,200 --> 00:11:46,700
+Então retorne ao console e você encontrará onde você está
+por digitar " get working directory" getwd()
+
+84
+00:11:46,800 --> 00:11:55,900
+e ter a certeza que estamos no diretório "home".
+Outra coisa que você pode fazer é listar os arquivos em seu HD
+
+85
+00:11:56,000 --> 00:12:09,900
+em seu diretório "home". Aqui está  list.files(). Então você procura e
+se tiver certeza que não há nenhum arquivo "test.R" o que você necessita fazer?
+
+86
+00:12:10,600 --> 00:12:16,100
+Você poderia
+digitar source() e passar o caminho para seu R script
+
+87
+00:12:16,200 --> 00:12:27,700
+o qual é "Rclass/test.R". Após fazer isso "Shazam" ele funcionou!
+
+88
+00:12:27,800 --> 00:12:36,700
+Então, se você observar aqui está o plot. Nós podemos criá-lo novamente.
+Vamos fechar a janela do gráfico e executá-lo novamente
+
+89
+00:12:38,900 --> 00:12:48,200
+"BAM!" aqui está ele. Legal! Porém essa não é a melhor solução.
+
+90
+00:12:48,500 --> 00:12:54,900
+A melhor solução é configurar o "Working Directory" para a correta localização,
+para que você possa usá-lo.
+
+91
+00:12:55,000 --> 00:13:02,500
+Eu posso utilizar um "caminho relativo" para
+meu diretório e dizer a ele "mude para Rclass"
+
+92
+00:13:02,600 --> 00:13:11,100
+e se você fizer list.files() verá nosso R source file.
+Aqui está ele.
+
+93
+00:13:11,200 --> 00:13:24,700
+Agora quando você fecha essas coisas e digita source("test.R") ele funciona
+"ehehehehehehe"!
+
+94
+00:13:24,800 --> 00:13:36,300
+Então vamos voltar um pouco mais aos scripts.
+Aqui está nosso script novamente e se você observá-lo nem tudo que fizemos
+
+95
+00:13:36,400 --> 00:13:45,900
+imprimir para a tela quando nós executamos o "source" ok.
+Então esses comandos que retornam para o console
+
+96
+00:13:46,000 --> 00:13:53,500
+como digitar o nome de uma variável, não serão impressos quando
+você  chamar source().
+
+97
+00:13:53,600 --> 00:14:01,500
+Então mesmo quando eu digito "SPP" no console ele retorna
+uma informação e quando executá-lo através do script ele não fará.
+
+98
+00:14:01,600 --> 00:14:07,100
+Então como podemos contornar isso?
+Bem, você poderá dar um comando print(spp) explicitamente
+
+99
+00:14:07,200 --> 00:14:13,900
+Então se você disser a ele print com SPP dentro da função
+ele imprimirá.
+
+100
+00:14:14,000 --> 00:14:25,500
+Da mesma forma o summary() não imprime.
+Então se eu quero ver o summary, eu devo coloca-lo dentro da função print()
+
+101
+00:14:25,600 --> 00:14:37,900
+Agora se eu salvar as mudanças no script e executar o source() novamente
+ele imprime.
+
+102
+00:14:38,000 --> 00:14:48,500
+Para que todas essas coisas legais aconteçam você deve está
+no correto diretório de trabalho
+
+103
+00:14:52,200 --> 00:14:58,700
+Um pouco mais de palavras. Especialmente quando está
+trabalhando em um PC, tenha muito cuidado.
+
+104
+00:15:00,300 --> 00:15:08,300
+Por razões que eu nunca compreendi, o padrão em PC é
+automaticamente configurar seu "Working Directory"
+
+105
+00:15:08,400 --> 00:15:16,100
+dentro da pasta "arquivos de programas".
+Isso significa que os arquivos que você está criando estão
+
+106
+00:15:16,200 --> 00:15:25,200
+misturados com os arquivos que estão executando seu software.
+Isto é loucura! Porém é o que acontece.
+
+107
+00:15:25,500 --> 00:15:30,500
+Então não utilize o "Working Directory" padrão.
+Não,Não,Não faça isso!
+
+108
+00:15:28,100 --> 00:15:37,600
+Ao invés disso configure seu "Working Directory" e
+coloque-o em um local aonde você possui seus arquivos de dados.
+
+109
+00:15:39,200 --> 00:15:46,500
+Não queira que as coisas fiquem misturadas.
+
+110
+00:15:46,900 --> 00:15:55,800
+O software R onde você está, econtra-se empacotado em seu computador.
+Ele deve estar armazenado em um local seguro.
+
+111
+00:15:55,900 --> 00:16:15,400
+Em meu "Mac", o programa R reside em um diretório diferente.
+Os arquivos estão em meu HD : /library/frameworks
+
+112
+00:16:15,500 --> 00:16:28,200
+/ R.frameworks / Versions / Current . O diretório "Current"
+é o ponteiro para a versão 3.0 e recursos
+
+113
+00:16:30,600 --> 00:16:39,800
+Essas são as "entranhas" do R.
+Você não quer que seus arquivos de dados misture com as entranhas do R.
+
+114
+00:16:39,900 --> 00:16:42,200
+Você quer que ele esteja em um um local separado e seguro.
+
+115
+00:16:42,300 --> 00:16:52,500
+Eu sempre crio diretórios de dados em meu diretório "home".
+
+116
+00:16:54,300 --> 00:17:00,200
+Então aqui é onde estão minhas coisas do R para essa aula.
+Você deveria fazer o mesmo ou algo similar.
+
+117
+00:17:01,300 --> 00:17:08,200
+Eu espero que isso ajude você a aprender algo sobre seu ambiente R,
+desmistifique as coisas um pouco,
+
+118
+00:17:08,300 --> 00:17:11,800
+ajude você a manter as coisas claras e mantenha seu
+ambiente saudável.
+
+119
+00:17:13,500 --> 00:17:16,400
+Isso é tudo. Se cuidem!
+
